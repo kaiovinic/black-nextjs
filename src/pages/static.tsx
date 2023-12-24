@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps = async () => {
 };
 
 const Static: NextPage = (props: {
-  staticData: ApiResponse;
+  staticData?: ApiResponse;
   children?: React.ReactNode;
 }) => {
   const [clientSideData, setClientSideData] = useState<ApiResponse>();
@@ -43,7 +43,7 @@ const Static: NextPage = (props: {
 
       <Row>
         <Col>
-          <h3>Gerado estaticamente durante o build:</h3>
+          <h3>Gerado estáticamente durante o build:</h3>
           <h2>{props.staticData?.timestamp.toString()}</h2>
         </Col>
 
