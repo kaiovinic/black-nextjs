@@ -21,7 +21,10 @@ export const getStaticProps: GetStaticProps = async () => {
   };
 };
 
-const Static: NextPage = (props: { children?: React.ReactNode }) => {
+const Static: NextPage = (props: {
+  staticData: ApiResponse;
+  children?: React.ReactNode;
+}) => {
   const [clientSideData, setClientSideData] = useState<ApiResponse>();
 
   useEffect(() => {
