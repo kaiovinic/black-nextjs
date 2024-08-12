@@ -17,13 +17,13 @@ const CartTableRow = (props: { entry: CartEntry }) => {
   return (
     <tr>
       <td>
-        <Row className="align-items-center">
-          <Col xs={4} md={2} lg={1}>
+        <Row className="align-items-center ">
+          <Col xs={4} md={2} lg={1} className="m-1 p-0">
             <Image
               src={props.entry.product.imageUrl}
               alt={props.entry.product.name}
-              height={50}
-              width={60}
+              height={70}
+              width={80}
             />
           </Col>
           <Col xs={8} md={10} lg={11}>
@@ -83,7 +83,7 @@ export default function CartTable() {
   }, [cart]);
 
   return (
-    <Table responsive className="align-middle" style={{ minWidth: "32rem" }}>
+    <Table responsive className="align-middle " style={{ minWidth: "32rem" }}>
       <thead>
         <tr>
           <th>Produto</th>
