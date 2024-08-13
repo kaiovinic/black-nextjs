@@ -13,7 +13,7 @@ const Cart: NextPage = () => {
       <Head>
         <title>Carrinho</title>
         <meta name="description" content="Meu carrinho de compras" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/avatar01.png" />
       </Head>
 
       <Header />

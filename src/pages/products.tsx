@@ -22,7 +22,7 @@ const Products: NextPage = (props: {
       <Head>
         <title>Nossos Produtos</title>
         <meta name="description" content="Conheça todos os nossos produtos" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="avatar01.png" />
       </Head>
 
       <Header />
